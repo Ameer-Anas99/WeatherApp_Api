@@ -11,21 +11,21 @@ Widget currentWeather(IconData icon, String temp, String location) {
           color: Colors.purple,
           size: 65,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(
           "$temp",
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 45,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Text(
           "$location",
-          style: TextStyle(fontSize: 15, color: Colors.grey),
+          style: const TextStyle(fontSize: 15, color: Colors.grey),
         )
       ],
     ),

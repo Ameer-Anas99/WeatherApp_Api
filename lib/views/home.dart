@@ -26,15 +26,15 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           currentWeather(Icons.wb_sunny_rounded, "25.2", "Georgia"),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             "Additional Information",
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
-          Divider(),
-          SizedBox(
+          const Divider(),
+          const SizedBox(
             height: 20,
           ),
           additionalInformation("24.1", "2", "1015", "25.4")
