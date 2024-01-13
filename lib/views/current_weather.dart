@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-Widget currentWeather(String imageurl, String temp, String location) {
+Widget currentWeather(String temp, String location) {
   return Center(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.network(imageurl),
         const SizedBox(
           height: 10,
         ),
