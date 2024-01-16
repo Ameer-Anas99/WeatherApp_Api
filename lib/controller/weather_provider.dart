@@ -5,7 +5,7 @@ import 'package:weather_app/services/weather_app_client.dart';
 class WeatherProvider extends ChangeNotifier {
   TextEditingController searchController = TextEditingController();
   WeatherProvider() {
-    getData("calicut");
+    getData("Malappuram");
   }
   Weather? data;
 

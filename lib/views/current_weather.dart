@@ -11,9 +11,7 @@ Widget currentWeather(String temp, String location) {
         ),
         Text(
           "$temp",
-          style: const TextStyle(
-            fontSize: 45,
-          ),
+          style: const TextStyle(fontSize: 45, color: Colors.white),
         ),
         const SizedBox(
           height: 15,
@@ -21,9 +19,10 @@ Widget currentWeather(String temp, String location) {
         Text(
           "$location",
           style: const TextStyle(
-              fontSize: 25,
-              color: Color.fromARGB(255, 90, 89, 89),
-              fontWeight: FontWeight.w600),
+            fontSize: 30,
+            color: Color.fromARGB(255, 60, 231, 66),
+            fontWeight: FontWeight.w600,
+          ),
         )
       ],
     ),
