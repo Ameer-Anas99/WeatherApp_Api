@@ -5,14 +5,9 @@ import 'package:weather_app/services/weather_app_client.dart';
 import 'package:weather_app/views/Additional_information.dart';
 import 'package:weather_app/views/current_weather.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomePage extends StatelessWidget {
+  HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   WeatherApiClient client = WeatherApiClient();
 
   @override
@@ -60,10 +55,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 if (pro.data != null)
                   currentWeather(
-                      "${pro.data!.temp!}",
-                      pro.searchController.text.isEmpty
-                          ? "Calicut"
-                          : pro.searchController.text),
+                    "${pro.data!.temp!}",
+                    pro.searchController.text.isEmpty
+                        ? "Calicut"
+                        : pro.searchController.text,
+                  ),
                 const SizedBox(
                   height: 20,
                 ),
